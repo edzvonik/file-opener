@@ -1,6 +1,7 @@
 package com.dzvonik.util;
 
 import java.util.logging.FileHandler;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
@@ -28,8 +29,8 @@ public class CustomLogger {
         return instance;
     }
 
-    public void logError(String message) {
-        LOGGER.severe(message);
+    public void logError(String message, Exception e) {
+        LOGGER.log(Level.SEVERE, message, e);
     }
 
 }
