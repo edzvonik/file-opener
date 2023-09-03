@@ -63,4 +63,5 @@ public class MainController extends MainView implements Initializable {
     public void initialize (URL url, ResourceBundle resourceBundle){
 
     }
+
 }
